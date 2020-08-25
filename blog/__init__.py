@@ -7,7 +7,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',   # TODO: prije deploya promjeniti SECRET_KEY
+        SECRET_KEY='dev',  # TODO: prije deploya promjeniti SECRET_KEY
         DATABASE=os.path.join(app.instance_path, 'blog.sqlite'),
     )
 
@@ -36,3 +36,5 @@ def create_app(test_config=None):
     app.register_blueprint(auth.bp)
 
     return app
+
+# TODO: Ovdje si stao: https://flask.palletsprojects.com/en/1.1.x/tutorial/blog/
