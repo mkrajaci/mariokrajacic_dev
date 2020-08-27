@@ -41,4 +41,4 @@ def create_app(test_config=None):
 
     return app
 
-# TODO: Ovdje si stao: https://flask.palletsprojects.com/en/1.1.x/tutorial/install/
+# TODO: Ovdje si stao za deploy: https://flask.palletsprojects.com/en/1.1.x/tutorial/deploy/
